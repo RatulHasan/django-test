@@ -1,21 +1,22 @@
 # django-test
 django-test
 
-# To Create virtualenv
+To Create virtualenv
 ```
 virtualenv -p python3 .
 ```
 
-# To Activate virtualenv
+To Activate virtualenv
 ```
 source bin/activate
 ```
+Then
 
 ```
 mkdir src && cd src
 ```
 
-# To Activate virtualenv
+To Activate virtualenv
 ```
 sudo pip install Django==1.11
 ```
@@ -23,7 +24,7 @@ sudo pip install Django==1.11
 ```
 django-admin startproject django-test .
 ```
-# To run server
+To run server
 
 ```
 python manage.py runserver
