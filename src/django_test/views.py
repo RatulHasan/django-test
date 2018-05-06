@@ -2,4 +2,9 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 def home_page(request):
-    return HttpResponse("<h1>Hello world!</h1>")
+    content = render(request, "content.html", {})
+    context = {
+        'title': "Home Page",
+        'main_content': content
+    }
+    return render(request, "home_page.html", context)
