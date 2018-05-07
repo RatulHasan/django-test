@@ -24,10 +24,10 @@ To Activate virtualenv
 ```
 sudo pip install Django==1.11
 ```
-
 ```
 django-admin startproject django-test .
 ```
+
 To run server
 
 ```
@@ -64,7 +64,6 @@ Every single time when you make change your models. run
 ```
 python manage.py makemigrations
 ```
-
 ```
 python manage.py migrate
 ```
