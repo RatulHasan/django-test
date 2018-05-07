@@ -2,14 +2,17 @@
 django-test
 
 To Create virtualenv
+
 ```
 virtualenv -p python3 .
 ```
 
 To Activate virtualenv
+
 ```
 source bin/activate
 ```
+
 Then
 
 ```
@@ -17,6 +20,7 @@ mkdir src && cd src
 ```
 
 To Activate virtualenv
+
 ```
 sudo pip install Django==1.11
 ```
@@ -38,11 +42,11 @@ python manage.py migrate
 
 To Create super user
 
-
 ```
 python manage.py createsuperuser
 
 ```
+
 To collect static
 
 ```
