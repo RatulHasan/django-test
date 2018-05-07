@@ -36,9 +36,8 @@ To migrate
 python manage.py migrate
 ```
 
-```
-
 To Create super user
+
 
 ```
 python manage.py createsuperuser
