@@ -44,3 +44,24 @@ To Create super user
 python manage.py createsuperuser
 
 ```
+To collect static
+
+```
+python manage.py collectstatic
+```
+
+To make an apps
+
+```
+python manage.py startapp products
+```
+
+Every single time when you make change your models. run
+
+```
+python manage.py makemigrations
+```
+
+```
+python manage.py migrate
+```
