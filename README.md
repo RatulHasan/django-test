@@ -29,3 +29,18 @@ To run server
 ```
 python manage.py runserver
 ```
+
+To migrate
+
+```
+python manage.py migrate
+```
+
+```
+
+To Create super user
+
+```
+python manage.py createsuperuser
+
+```
