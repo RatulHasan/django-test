@@ -18,14 +18,16 @@ from django.conf.urls import url
 from django.conf.urls.static import static
 from django.contrib import admin
 
-from .products.views import ProductListView, product_list_view
+from .products.views import ProductListView, product_list_view, ProductDetailView, product_detail_view
 from .views import home_page, form_page
 
 urlpatterns = [
     url(r'^$', home_page),
-    url(r'^login/', form_page),
-    url(r'^product-def/', product_list_view),
-    url(r'^product/', ProductListView.as_view()),
+    url(r'^login/$', form_page),
+    url(r'^product-def/$', product_list_view),
+    url(r'^product/$', ProductListView.as_view()),
+    url(r'^product/(?P<pk>\d+)/$', ProductDetailView.as_view()),
+    url(r'^product-def/(?P<pk>\d+)/$', product_detail_view),
     url(r'^admin/', admin.site.urls),
 ]
 
